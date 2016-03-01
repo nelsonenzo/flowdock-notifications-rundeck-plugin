@@ -1,8 +1,6 @@
 # IDEA
 *.iml
 .idea/
-.gradle/
-build/
 
 # NetBeans
 nb-configuration.xml
@@ -16,8 +14,3 @@ nb-configuration.xml
 target/
 pom.xml.versionsBackup
 dependency-reduced-pom.xml
-
-atlassian-ide-plugin.xml
-
-# Importer data
-**/data/*_full.xml

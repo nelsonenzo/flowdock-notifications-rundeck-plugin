@@ -97,4 +97,11 @@
         <url>https://github.com/osigida/flowdock-notifications-rundeck-plugin/</url>
         <tag>HEAD</tag>
     </scm>
+    <distributionManagement>
+        <repository>
+            <id>local-files</id>
+            <url>file:./dist</url>
+        </repository>
+    </distributionManagement>
+
 </project>

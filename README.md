@@ -16,5 +16,6 @@ and choose `Flowdock Notifications Plugin` in either: "On Success", "On Failure"
 After the plugin will be selected there are few parameters to be specified:
 
 * Flowdock Flow Token (mandatory) - this will direct the notification to a specific flow (identified by the token)
-* Tags (optional) - can be entered to make the Flowdock search much easier
+* Tags (optional) - can be entered to make the Flowdock search much easier, plugin expects tags to be separated with space(s),
+  the initial hash sign (`#`) before each tag is optional - it will be added if needed.
 

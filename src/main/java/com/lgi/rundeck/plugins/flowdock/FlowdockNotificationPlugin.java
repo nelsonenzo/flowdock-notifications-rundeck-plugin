@@ -7,7 +7,6 @@ import com.dtolabs.rundeck.plugins.notification.NotificationPlugin;
 
 import java.io.IOException;
 import java.util.Map;
-import java.util.Optional;
 
 @Plugin(service = "Notification", name = "flowdock-notifications")
 @PluginDescription(title = "Flowdock Notifications Plugin", description = "Notifies a flow on a job status change.")
@@ -27,7 +26,7 @@ public class FlowdockNotificationPlugin implements NotificationPlugin {
 
         final FlowdockMessageSender sender = new FlowdockMessageSender("Rundeck", flowToken);
         try {
-            sender.postData(message, Optional.ofNullable(tags));
+            sender.postData(message, tags);
         } catch (IOException e) {
             throw new RuntimeException("Couldn't send message: " + message + " to FlowDock");
         }

@@ -28,7 +28,7 @@ public class FlowdockNotificationPlugin implements NotificationPlugin {
         try {
             sender.postData(message, tags);
         } catch (IOException e) {
-            throw new RuntimeException("Couldn't send message: " + message + " to FlowDock");
+            throw new RuntimeException("Couldn't send message: " + message + " to FlowDock", e);
         }
         return true;
     }
